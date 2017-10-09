@@ -1,0 +1,12 @@
+# URL rewrite
+
+# Options +FollowSymlinks
+RewriteEngine On
+#RewriteRule ^\.(.*) ./passthru.php?for=ignore [QSA,L]
+# RewriteRule \.(php|ico|txt|css|js|shtml)$ - [L]
+# RewriteRule ^(media/|archief/|\.theme/|\.tools/|skin/|google) - [L]
+# RewriteRule ^(profiel|activeer)/([^/]+)/(.*) ./beheer.php?id=$2&mode=$1&for=$3 [QSA,L]
+RewriteRule ^$ ./alternatief.php [QSA,L]
+#RewriteRule ^(.*) ./passthru.php?q=$1 [QSA,L]
+
+RewriteRule ^(nl|en|original)/(.*)$ ./passthru.php?l=$1&q=$2 [L]

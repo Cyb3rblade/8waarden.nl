@@ -1,0 +1,12 @@
+<style>
+	form textarea { width: 49%; min-height: 250px; }
+</style>
+<form method="POST">
+	<input type="hidden" name="translate" value="en-nl" />
+	<textarea name="from"></textarea>
+	&rArr;
+	<textarea name="to"></textarea><br/><!--
+	{text[caller]|Caller}: <input name="caller" type="text" value="" /><br/>
+	{text[default]|Default text}: <input name="default" type="text" value="" /><br/>-->
+	<input type="submit" value="{text[action]|Add}" />
+</form>
